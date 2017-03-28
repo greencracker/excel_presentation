@@ -1,0 +1,490 @@
+<html><head>
+
+<title>Excel for reporters</title>
+<meta charset="utf-8">
+<style>
+h1,h2 { font-family:helvetica;font-weight:normal;margin-top:40px; }
+h2 { font-size:12pt;}
+
+td { vertical-align:top;font-size:small;padding:20px; }
+body { font-family:verdana;font-size:small;text-align:center;
+     }
+#main { text-align:left;width:850px;margin:auto; }
+img { border:1px solid #8ac;width:260px;height:146px; }
+
+blockquote { font-style:italic; }
+hr { border:1px solid #ddd; }
+/** {
+    border: 1px solid red !important;
+}**/
+</style>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+<div id="main">
+
+
+<p>Excel is for reporters, not just accountants.</p>
+<p>By Maggie Lee, April 27, 2017</p><hr>
+
+
+<table cellspacing="10">
+<tbody><tr>
+    <td><a href="https://imgflip.com/i/1m76oj"><img src="https://i.imgflip.com/1m76oj.jpg" title="made at imgflip.com"/></a></td>
+
+    <td>
+    <h1 style="margin-top:0px">Better living for reporters through Excel</h1>
+    <ol>
+        <li><a href="#why">Why use nerdy spreadsheets?</a></li>
+        <li><a href="#open">Let's open, sort and filter</a></li>
+        <li><a href="#pivot">Insights & falsehoods from PivotTables</a></li>
+        <li><a href="#graphs">Use graphs to see hard-to-see trends</a></li>
+        <li><a href="#errors">Common Excel errors and how not to panic</a></li>
+
+        
+    </ol>
+     </td>
+</tr>
+
+
+
+<tr>
+    <td colspan="2">
+        <h1><a name="why" style="text-decoration:none" href="#top">Why use spreadsheets?</a></h1>
+        <hr>
+    </td>
+</tr>
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+        <p>Excel isn't just for accountants. It's for everybody, including reporters. We'll see how you can get story ideas. Who's the highest-paid state employee? How many crimes do cops work at Lenox versus Wal-Mart versus Target?
+              
+        </p><p>But we'll also see why data is like a tipster. Sometimes very good, if not quite correct.  You still need to interview humans who know what's going on. For example, there weren't 107 homicides in Atlanta last year, despite what our data's going to suggest at first glance.
+
+        </p><p>Here are some stories where they must've used a spreadsheet.  If they didn't, they'll wish they had. Pay attention to the last one. Our walk-through is modelled on that. 
+
+        <ol>
+            <li><a href="http://www.13wmaz.com/news/request-reveals-thousands-of-911-calls-to-walmart/153000548" target="_blank">Thousands of calls draw deputies to Macon Wal-Marts</a></li>
+        
+        </ol>
+
+    </td>
+</tr>
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+        <p>More and more places are publishing spreadshets! Look for little links that say stuff like "download Excel" or "download .csv" or "download data."
+
+        </p>
+
+        <ol>
+            <li><a href="http://opendata.atlantapd.org" target="_blank">The Atlanta Police Department</a></li>
+            <li><a href="http://qpublic9.qpublic.net/ga_sales_dw.php?county=ga_fulton" target="_blank">Fulton County Board of Assessors (Property sale prices)</a></li>
+            <li><a href="http://media.ethics.ga.gov/search/Lobbyist/Lobbyist_ByExpenditures.aspx" target="_blank">The Georgia lobbyist expenditure log</a></li>
+            <li><a href="http://media.ethics.ga.gov/search/Lobbyist/Lobbyist_Menu.aspx" target="_blank">Or heck, the lobbyist registry</a></li>
+            <li><a href="http://media.ethics.ga.gov/search/Campaign/Campaign_ByContributions.aspx" target="_blank">Or heck, all campaign donations. Including the circular ones.</a></li>
+            <li><a href="http://www.gadoe.org/Pages/Home.aspx" target="_blank">A zillion things from the state Department of Education, look under "data".</a></li>
+        </ol>
+
+    </td>
+</tr>
+
+<tr>
+    <td colspan="2">
+        <h1><a name="open" style="text-decoration:none" href="#top">What kind of file can I open and what's in there?</a></h1>
+        <hr>
+    </td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td><p>Excel can open .xls, .xlsx, .csv, .txt, sometimes html tables and some others.  I'm not going to go through all those.  But keep in mind you can open some exotic filetypes, and you can Google that. You might need to file > import.
+    
+    </p><p><a href="https://www.google.com/sheets/about/" target="_blank">Google Sheets</a> is a free alternative to Excel; it's in your Gmail account. It does pretty everything that Excel will in this presentation.
+    
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+
+    <p>A spreadsheet is just a table or a log. A table with calculating and sorting powers.
+
+    </p><p>We're going to start with the state employee salary database: [TO BE UPLOADED].
+
+    </p><p>It's for FY 2016. PS you can download all years here [TO BE LINKED].
+
+    </p></td>
+</tr>
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>The top row is the column names.
+    
+    </p><p>Click anywhere in this and you can slide around with the sliders or the mouse.
+    
+    </p><p>You scroll down and the first irritating thing that happens is the column names disappear.
+    
+    </p><p>That's the first thing we'll fix. Right now. 
+    
+    </p><p>Click on the "2" over at the left. The whole row highlights. Then slide up to Window > Freeze Panes. Then try scrolling down.
+    
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>OK you can't see the full names or titles.  Let's widen some of these columns.
+      
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Obviously the first thing you want to do is see who is the highest-paid employeee.
+    
+    </p><p>Click anywhere in the sheet and go to Data > Sort. Look up in the top right, make sure there's a check beside "My list has headers."
+    
+    </p><p>Then tell it you want to sort by salary.
+
+    </p><p>The ports director made nearly $2 million? 
+
+    </p><p>Yes and no. Here's the first data reality check. He made $2 million the year he left, once you count salary, bonuses, pensions and other fees. The <a href="</p><p>http://www.myajc.com/news/state--regional-govt--politics/retiring-georgia-ports-chief-leaves-with-boatload-compensation/M1yMuB6gZW7Wiu7MFRq2wM/" target ="_blank">AJC did the reporting<a> on that.
+    
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Let's say I just want to look at salaries at the lottery.  Let's FILTER by organization.
+    
+    </p><p>Click anywhere in the sheet and go to Data > Filter. That gives you a bunch of drop-down arrows.
+    
+    </p><p>Try the little arrow by "organziation."  Uncheck "Select All" ... so nothing's selected.  Then check the boxes of the organizations of your choice.
+
+    </p><p>To clear the filter, click the dropdown menu again and click "Clear Filter."
+    
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Then obviously you want to see who is the highest-paid coach.
+    
+    </p><p>Clear out all the filters, then just filter by title "coach."
+    
+    </p><p>There are a lot of titles to scroll through.  On later versions of Excel, you can use a little search box, see picture.
+
+    </p><p>WAIT ISN'T UGA'S HEAD FOOTBALL COACH PAID MORE THAN THIS??
+
+    </p><p>Of course. In this high-profile case, spidey sense and a quick Google search reveals he makes more than this. This data is for FY2016, the year beginning July 1, 2015. So (1) it doesn't cover a full year of his salary. And (2) check with the sports desk on this, but maybe is some of his salary paid by like a foundation or something? Maybe not a straight-up state paycheck? This is something you'd have to check out via reporting.
+    
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Let's look some more. Local school systems are in this data set, so let's filter by organizations that contain "county" and make sure we're still sorting by salary.
+    
+    </p><p>Kind of no surprise there, Gwinnett County's school super shows as highest-paid.  Though of course we would call and double-check his salary and the next few down before we report any numbers.
+
+    </p><p>But let's scroll around out of curiousity.  See anything unusual in the top, oh, 12?  Say a kindergarten teach listed at $245k?  
+
+    </p><p>My guess there is a data entry error. 
+    
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Clear out all the filters though, and sort by salary lowest-to-highest.
+    
+    </p><p>Negative salaries?  Times have been bad, but my guess is ... data entry error again? 
+
+    </p><p>It wouldn't be a large percentage error ... scroll to the bottom.  There are 501,733 employees listed. So now you also know approximately how many people worked for the state of Georgia — including local school systems and colleges — at any point during FY 2016. 
+    
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>But despite the need for reality checks, the data gives us some real insights. Generally, the highest-paid employees are at universities.
+    
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>OK "sort" and "filter" can give us some insights.
+
+    </p><p>But for summing and grouping, let's look at PivotTables.
+    
+    </p></td>
+</tr>
+
+
+<tr>
+    <td colspan="2">
+        <h1><a name="pivot" style="text-decoration:none" href="#top">Insights & Falsehoods from PivotTables</a></h1>
+        <hr>
+    </td>
+</tr>
+
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>A PivotTable is going to sum and count things for you.  For example, we know can get pretty high at Augusta University.  What's its total payroll?
+
+    </p><p>Click anywhere in the table and go to Data > PivotTables
+
+    </p><p>It gives you a cryptic popop. It's asking "what all data" do you want to look at here?
+
+    </p><p>The good news: It's generally by default correct because it assumes "all the data.""
+    
+    </p><p>The explanation of the good news: "SalaryTravelDataExport2016.csv!$A$1:$F$501733" means "top left to bottom right," as in the picture over there. 
+
+    </p><p>So click "OK."
+    
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Don't worry if your Excel looks different from mine.
+    
+    </p><p>Whatever yours looks like, try clicking & dragging "organization" into "row labels."
+    
+    </p><p>Then click and drag the word "salary" into "values."
+
+    </p><p>Then that salary you've dragged down there?  Click on the little "i" and change "count by" to "sum."
+    
+    </p><p>You're telling it to sum up all the salaries by institution.
+
+    </p><p>And you know what? You can now sort by that "Total" column.
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Well gosh, Gwinnett schools have the largest total payroll. Do they have a ton more employees?
+    
+    </p><p>Click back into the PivotTable to get all the choices to come back up.
+    
+    </p><p>Then click and drag the word "name" into "values."
+
+    </p><p>Then that "name" you've just dragged down there?  Click on the little "i" and make sure "count" is selected.
+    
+    </p><p>You're telling it to count all the unique names of employees by employer.
+
+    </p><p>It's pretty much a proxy for number of employees. Though yea, there could be more than one "Maggie Lee" somewhere.  That's why I say "pretty much."
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>So that was a fun data set. We got some story leads on high-paid employees.
+    
+    </p><p>But eh, the trends weren't so surprising. Pay is pretty high at universities.
+    
+    </p><p>Let's try another data set, one from the Atlanta Police Department.
+
+    </p><p>It's a log of a handful of key crimes for CY 2016. [TO BE LINKED HERE]
+    
+    </p></td>
+</tr>
+
+
+
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+
+  <p>So take a minute and scroll through this a little. 
+
+  </p><p>Definitely freeze the top row to mark it as the header. Then scroll and sort and filter some if you like. Widen some of the columns if you like.
+
+  </p><p>Hint, hint, note that there's a column MaxOfnum_victims.
+
+  </p>
+</td></tr>
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Now let's put all that in a PivotTable.
+    
+    </p><p>Let's see about the numbers of each of these crimes.
+    
+    </p><p>You'll want to take "UC2 Literal" and drag it down into "row labels," then take and drag it again down into "values," and make sure it's set to "count" of UC2 Literal.
+
+    </p><p>Sort then by count. You'll see homicide are the fewest, larceny from vehicle is the most.
+    
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>But you'd call APD and double-check before reporting this, right? 
+    
+    </p><p>I hope so because there were not 107 homicides in 2016. There were <a href="http://www.ajc.com/news/local/atlanta-homicides-from-2016-remain-unsolved-these-are-the-victims/UelLUXycTlEOJTJ7mqKf6N/" target="_blank">111</a>. 
+    
+    </p><p>This data set doesn't count the number of vicitms.  I think the discrepancy is probably double homicides. But if I were reporting, I'd go to the source.
+
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>But there is what may be an interesting insight in here. 
+    
+    </p><p>Go back to that PivotTable and try to find the most crime-infested address.
+    
+    </p><p>You'd want row labels to be "location" and the values to be count of location.
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Clearly, I'm no crime reporter ...
+    
+    </p><p>But I wasn't thinking of Wal-Mart and Lenox and Target being such hotbeds of crime.
+    
+    </p><p>And some of these addresses could accurately be combined further. 
+
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>So am I going to do a clickbaity story about how DANGER LOOMS at shopping centers?
+    
+    </p><p>I hope not. Because there may be a deeper story here. Is it possible one of these retailers is leaning on the cops more than others? Hiring less private security than the others? 
+    
+    </p><p>Bloomberg had some <a href="https://www.bloomberg.com/features/2016-walmart-crime/" target="_blank">interesting reporting</a> on Wal-Mart and security.
+
+    </p><p>So did <a href="http://www.13wmaz.com/news/request-reveals-thousands-of-911-calls-to-walmart/153000548" target="_blank">Macon's</a> WMAZ.
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td colspan="2"><h1><a style="text-decoration:none" name="graphs" href="#top">Graphs!</a></h1><hr></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Coming soon! Graphs section!
+
+
+    </p></td>
+</tr>
+
+
+
+<tr>
+    <td colspan="2"><h1><a href="#errors" style="text-decoration:none" name="conclusion">Stirring Conclusion: Common Excel Problems</a></h1><hr></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>There are plenty of errors and the internet has the answer to them all.
+    
+    </p><p>"Numbers stored as text"
+    
+    </p></td>
+</tr>
+
+
+
+</tr>
+
+
+
+
+
+
+</tbody></table>
+
+
+
+
+<p>Sincere apologies to <a href="http://idlewords.com" target="_blank">idewords</a>, author of <a href="http://idlewords.com/talks/website_obesity.htm" target="_blank">The Website Obesity Crisis</a>, for my lifting this lovey lightweight layout.
+
+
+</p></div>
+
+
+
+
+
+
+
+</body></html>
