@@ -139,12 +139,12 @@ hr { border:1px solid #ddd; }
 
     <p>A spreadsheet is just a table or a log. A table with calculating and sorting powers.
 
-    </p><p>We're going to start with the state employee salary database for 2016. <a href="https://greencracker.github.io/excel_presentation/pix/SalaryTravelDataExport2016.zip" target="_blank">Which is right here</a>.
+    </p><p>We're going to start with the state employee salary database for 2016. <a href="https://greencracker.github.io/excel_presentation/pix/State2016Mod.csv.zip" target="_blank">Which is right here</a>.
 
     </p></td>
 </tr>
 <tr>
-    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/freeze_row.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/freeze_row.JPG"></a></td>
     <td>
     
     <p>The top row is the column names.
@@ -161,7 +161,7 @@ hr { border:1px solid #ddd; }
 </tr>
 
 <tr>
-    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/column_adjust.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/column_adjust.JPG"></a></td>
     <td>
     
     <p>OK you can't see the full names or titles.  Let's widen some of these columns.
@@ -190,14 +190,15 @@ hr { border:1px solid #ddd; }
     <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
     <td>
     
-    <p>Let's say I just want to look at salaries at the lottery.  Let's FILTER by organization.
+    <p>Let's say I just want to look at salaries in the governor's office.  Let's FILTER by organization.
     
     </p><p>Click anywhere in the sheet and go to Data > Filter. That gives you a bunch of drop-down arrows.
     
-    </p><p>Try the little arrow by "organziation."  Uncheck "Select All" ... so nothing's selected.  Then check the boxes of the organizations of your choice.
+    </p><p>Try the little arrow by "organziation."  Uncheck "Select All" ... so nothing's selected.  Then scroll down to Governor, Office of The.
 
-    </p><p>Just check "Georgia Lottery Corporation."
-    </p><p>Red flag: the CEO is not listed. Just saying.
+    </p><p>Just check "Governor, Office of The"
+    </p><p>And where is the Governor himself?  You can "find" the word "Deal."
+    </p><p>Go under Edit > Find.  Or, depending on your version, use crtl + F or the search box in the top right.
 
     </p><p>To clear the filter, click the dropdown menu again and click "Clear Filter."
     
@@ -225,14 +226,9 @@ hr { border:1px solid #ddd; }
     <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
     <td>
     
-    <p>Let's look some more. Local school systems are in this data set, so let's filter by organizations that contain "county" and make sure we're still sorting by salary.
+    <p>Other fun filters can include titles like "excutive director" or organzations like whatever state agency you are covering. And although it doesn't include phone numbers, it's also something of a handy employee directory.
     
-    </p><p>Kind of no surprise there, Gwinnett County's school super shows as highest-paid.  Though of course we would call and double-check his salary and the next few down before we report any numbers.
-
-    </p><p>But let's scroll around out of curiousity.  See anything unusual in the top, oh, 12?  Say a kindergarten teach listed at $245k?  
-
-    </p><p>My guess there is a data entry error. 
-    
+     
     </p></td>
 </tr>
 
@@ -242,12 +238,41 @@ hr { border:1px solid #ddd; }
     
     <p>Clear out all the filters though, and sort by salary lowest-to-highest.
     
-    </p><p>Negative salaries?  Times have been bad, but my guess is ... data entry error again? 
+    </p><p>Negative salaries?  Times have been bad, but my guess is ...???? 
 
-    </p><p>It wouldn't be a large percentage error ... scroll to the bottom.  There are 501,733 employees listed. So now you also know approximately how many people worked for the state of Georgia — including local school systems and colleges — at any point during FY 2016. 
+    </p><p>So there's another data thing that fails the logic test. So do a lot of those salaries of $0.  Some indeed are board members that don't recieve salary. And some names, for some reason, are entered twice, once for salary and once for travel. 
     
     </p></td>
 </tr>
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/scroll.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/scroll.JPG"></a></td>
+    <td>
+    
+    <p>Does it matter that some of the records make no sense?  Is this still reliable?
+    
+    </p><p>Well, let's go to the end to see how many records there are altogether.
+
+    </p><p>Pro tip: it will take you a long time to scroll. Use a keyboard shortcut to scroll.  It will vary by computer and program and version. Mine is crtl + fn + right arrow. Yours may be crtl + down arrow. You may have to Google your shortcut.
+
+    </p><p>Anyway we have 207,572 records. Of which about 2,300 have negative or $0 salaries. And of those, some are understandable, like board members earning $0. And others might be understandable if we asked about them. 
+    
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>So, I'd say, yea, this is a pretty good 40,000-foot view of salaries, though all of it requires a reality check. It also gives us an idea that in FY 16, "some" 207,572 people worked for at least a day for the state. That includes folks from student assistants at colleges to the governor (but it doesn't include K-12 teachers, which it arguably could.)
+
+    </p><p>Any other story ideas you see in it? 
+
+    </p><p>But it's only a tipsheet. The first time you visit this site, you have to click "OK" on a note from the state auditor in which he says he's just collecting the data in accordance with Georgia law and does not express an opinion or any other form of assurance on it.
+    
+    </p></td>
+</tr>
+
 
 
 <tr>
@@ -468,9 +493,9 @@ hr { border:1px solid #ddd; }
     <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
     <td>
     
-    <p>There are plenty of errors and the internet has the answer to them all.
+    <p>There are plenty of errors and troubles and the internet has the answer to them all.
     
-    </p><p>"Numbers stored as text"
+    </p><p>"Numbers stored as text" 
     
     </p></td>
 </tr>
