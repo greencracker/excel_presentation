@@ -339,7 +339,7 @@ hr { border:1px solid #ddd; }
     
     </p><p>Then click and drag the word "salary" into "values."
 
-    </p><p>Then that salary you've dragged down there?  Click on the little "i" and change "count by" to "sum."
+    </p><p>Then that salary you've dragged down there?  Click on the little "i" and change "count by" to "sum."  In English, you're saying "Sum up all the salaries you find under each organization."
     
     </p><p>You're telling it to sum up all the salaries by institution.
 
@@ -361,7 +361,7 @@ hr { border:1px solid #ddd; }
 
     </p><p>Then that "name" you've just dragged down there?  Click on the little "i" and make sure "COUNT" is selected.
     
-    </p><p>You're telling it to "COUNT" all the unique "NAMEs" of employees -- tally up number of unique names.
+    </p><p>You're telling it to "COUNT" all the unique "NAMEs" of employees. In English, you're saying "please count the number of employee names you see under each organization"
 
     </p><p>That's pretty much a proxy for number of employees.
 
@@ -383,7 +383,7 @@ hr { border:1px solid #ddd; }
     
     </p><p>Let's try another data set, one from the Atlanta Police Department.
 
-    </p><p>It's a log of a handful of key crimes for CY 2016. [TO BE LINKED HERE]
+    </p><p>It's a log of a handful of key crimes for CY 2016. <a href="https://greencracker.github.io/excel_presentation/pix/COBRADATA2016.zip" target="download">Which is right here</a>
     
     </p></td>
 </tr>
@@ -407,7 +407,7 @@ hr { border:1px solid #ddd; }
 
 
 <tr>
-    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+     <td><a href="https://greencracker.github.io/excel_presentation/pix/uc2literal.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/uc2literal.JPG"></a></td>
     <td>
     
     <p>Now let's put all that in a PivotTable.
@@ -415,6 +415,8 @@ hr { border:1px solid #ddd; }
     </p><p>Let's see about the numbers of each of these crimes.
     
     </p><p>You'll want to take "UC2 Literal" and drag it down into "row labels," then take and drag it again down into "values," and make sure it's set to "count" of UC2 Literal.
+
+    </p><p>In English, you're asking it "how many times to you see the phrase 'AGG ASSAULT' and 'AUTO THEFT' and so on.
 
     </p><p>Sort then by count. You'll see homicide are the fewest, larceny from vehicle is the most.
     
@@ -429,27 +431,27 @@ hr { border:1px solid #ddd; }
     
     </p><p>I hope so because there were not 107 homicides in 2016. There were <a href="http://www.ajc.com/news/local/atlanta-homicides-from-2016-remain-unsolved-these-are-the-victims/UelLUXycTlEOJTJ7mqKf6N/" target="_blank">111</a>. 
     
-    </p><p>This data set doesn't count the number of vicitms.  I think the discrepancy is probably double homicides. But if I were reporting, I'd go to the source.
+    </p><p>This data set doesn't include the number of vicitms for homicides (check that MaxOfnum_victims column.) I think the discrepancy is probably double homicides. But if I were reporting, I'd go to the source.
 
     </p></td>
 </tr>
 
 <tr>
-    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/countoflocation.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/countoflocation.JPG"></a></td>
     <td>
     
-    <p>But there is what may be an interesting insight in here. 
+    <p>But even though you have to double-check the exact numbers, there are some broad trends in there that could mean a story for you. 
     
     </p><p>Go back to that PivotTable and try to find the most crime-infested address.
     
-    </p><p>You'd want row labels to be "location" and the values to be count of location.
+    </p><p>You'd want row labels to be "LOCATION" and the values to be COUNT of location.
 
     </p></td>
 </tr>
 
 
 <tr>
-    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/filterbylabel.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/filterbylabel.JPG"></a></td>
     <td>
     
     <p>Clearly, I'm no crime reporter ...
@@ -457,6 +459,12 @@ hr { border:1px solid #ddd; }
     </p><p>But I wasn't thinking of Wal-Mart and Lenox and Target being such hotbeds of crime.
     
     </p><p>And some of these addresses could accurately be combined further. 
+
+    </p><p>Try sorting by row labels. Scroll down and you'll notice a lot of addresses that are counted separately but are actually the same. For example, humans know "1275 CAROLINE ST" = "1275 CAROLINE ST." but a computer doesn't know that.
+
+    </p><p>So to get a truer idea of how many crimes were actually reported at/around the Caroline Street shopping center, let's do a "FILTER" of ROW LABELS that contain the word "1275 CAROLINE."
+
+    </p><p>Or do a "FILTER" of ROW LABELS that contain just the word "CAROLINE."  That will pick up the whole shopping center, including like the Kroger at 1225.
 
     </p></td>
 </tr>
