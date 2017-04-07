@@ -199,7 +199,7 @@ hr { border:1px solid #ddd; }
 
 
 <tr>
-    <td><a href="https://greencracker.github.io/excel_presentation/pix/filter.jpeg"><img src="https://greencracker.github.io/excel_presentation/pix/filter.jpeg"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/filter.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/filter.JPG"></a></td>
     <td>
     
     <p>Let's say I just want to look at salaries in the governor's office.  Let's FILTER by organization.
@@ -322,7 +322,7 @@ hr { border:1px solid #ddd; }
 
     </p><p>The good news: It's generally by default correct because it assumes "all the data."
     
-    </p><p>The explanation of the good news: "SalaryTravelDataExport2016.csv!$A$1:$F$501733" means "top left to bottom right," as in the picture over there. 
+    </p><p>The explanation of the good news: "State2016Mod.csv!$A$1:$E$207573.csv!$A$1:$F$501733" means "top left to bottom right," as in the picture over there. 
 
     </p><p>So click "OK."
     
@@ -410,13 +410,13 @@ hr { border:1px solid #ddd; }
      <td><a href="https://greencracker.github.io/excel_presentation/pix/uc2literal.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/uc2literal.JPG"></a></td>
     <td>
     
-    <p>Now let's put all that in a PivotTable.
+    <p>Now let's put all that in a PivotTable. Go to Data > PivotTable.
     
     </p><p>Let's see about the numbers of each of these crimes.
     
     </p><p>You'll want to take "UC2 Literal" and drag it down into "row labels," then take and drag it again down into "values," and make sure it's set to "count" of UC2 Literal.
 
-    </p><p>In English, you're asking it "how many times to you see the phrase 'AGG ASSAULT' and 'AUTO THEFT' and so on.
+    </p><p>In English, you're asking it "How many times to you see the phrase 'AGG ASSAULT' and 'AUTO THEFT' and so on?"
 
     </p><p>Sort then by count. You'll see homicide are the fewest, larceny from vehicle is the most.
     
@@ -460,14 +460,39 @@ hr { border:1px solid #ddd; }
     
     </p><p>And some of these addresses could accurately be combined further. 
 
-    </p><p>Try sorting by row labels. Scroll down and you'll notice a lot of addresses that are counted separately but are actually the same. For example, humans know "1275 CAROLINE ST" = "1275 CAROLINE ST." but a computer doesn't know that.
+    </p><p>Try sorting by row labels, ie, by addresses. Scroll down and you'll notice a lot of addresses that are counted separately but are actually the same. For example, humans know "1275 CAROLINE ST" = "1275 CAROLINE ST." but a computer doesn't know that.
 
     </p><p>So to get a truer idea of how many crimes were actually reported at/around the Caroline Street shopping center, let's do a "FILTER" of ROW LABELS that contain the word "1275 CAROLINE."
 
-    </p><p>Or do a "FILTER" of ROW LABELS that contain just the word "CAROLINE."  That will pick up the whole shopping center, including like the Kroger at 1225.
+    </p><p>Or do a "FILTER" of ROW LABELS that contain just the word "CAROLINE."  That will pick up the whole shopping center, including like, the Kroger at 1225.
 
     </p></td>
 </tr>
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/detailsbyaddress.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/detailsbyaddress.JPG"></a></td>
+    <td>
+    
+    <p>And you can see what kinds of crime happen at these shops.
+    
+    </p><p>Click and drag our friend "UC2 Literal" down to "Row Labels."
+
+
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/crimedetail.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/crimedetail.JPG"></a></td>
+    <td>
+    
+    <p>And if you want to get super-fancy and count only LARCENY-NON VEHICLE or whatever, use that little filter button, make sure it's going to filter by field "UC2 Literal," then click or unclick whichever crimes you want to see.  There's a Grand Total at the bottom.
+
+
+    </p></td>
+</tr>
+
+
+
 
 <tr>
     <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
@@ -475,11 +500,11 @@ hr { border:1px solid #ddd; }
     
     <p>So am I going to do a clickbaity story about how DANGER LOOMS at shopping centers?
     
-    </p><p>I hope not. Because there may be a deeper story here. Is it possible one of these retailers is leaning on the cops more than others? Hiring less private security than the others? 
+    </p><p>I mean OK, but there's possibly a better story. Is it possible one of these retailers is leaning on the cops more than others? Hiring less private security than the others? 
     
     </p><p>Bloomberg had some <a href="https://www.bloomberg.com/features/2016-walmart-crime/" target="_blank">interesting reporting</a> on Wal-Mart and security.
 
-    </p><p>So did <a href="http://www.13wmaz.com/news/request-reveals-thousands-of-911-calls-to-walmart/153000548" target="_blank">Macon's</a> WMAZ.
+    </p><p>So did <a href="http://www.13wmaz.com/news/request-reveals-thousands-of-911-calls-to-walmart/153000548" target="_blank">Macon's</a> WMAZ. They used addresses they found in the 911 call log.
 
     </p></td>
 </tr>
@@ -512,6 +537,8 @@ hr { border:1px solid #ddd; }
     <p>There are plenty of errors and troubles and the internet has the answer to them all.
     
     </p><p>"Numbers stored as text" 
+
+    </p><p>Your spreadsheet has too many rows to open
     
     </p></td>
 </tr>
