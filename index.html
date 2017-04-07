@@ -316,13 +316,13 @@ hr { border:1px solid #ddd; }
     
     <p>A PivotTable is going to sum and count things for you.  For example, we know salaries can get pretty high at Augusta University.  What's its total payroll?
 
-    </p><p>Click anywhere in the table and go to Data > PivotTables
+    </p><p>Click anywhere in the table and go to Data > PivotTable
 
     </p><p>It gives you a cryptic popup. It's asking "what all data" do you want to look at here?
 
     </p><p>The good news: It's generally by default correct because it assumes "all the data."
     
-    </p><p>The explanation of the good news: "State2016Mod.csv!$A$1:$E$207573.csv!$A$1:$F$501733" means "top left to bottom right," as in the picture over there. 
+    </p><p>The explanation of the good news: "State2016Mod.csv!$A$1:$E$207573.csv" means "top left to bottom right," as in the picture over there. 
 
     </p><p>So click "OK."
     
@@ -339,38 +339,44 @@ hr { border:1px solid #ddd; }
     
     </p><p>Then click and drag the word "salary" into "values."
 
-    </p><p>Then that salary you've dragged down there?  Click on the little "i" and change "count by" to "sum."  In English, you're saying "Sum up all the salaries you find under each organization."
-    
-    </p><p>You're telling it to sum up all the salaries by institution.
+    </p></td>
+</tr>
 
-    </p><p>And you know what? You can now sort by that "Total" column.
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/sumofsalary.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/sumofsalary.JPG"></a></td>
+    <td>
+    
+    <p>We're saying: "For every organzation, SUM the salaries."    
+    
+    </p><p>My version defaults to "sum." If yours doesnt, you can change it. Where/how you change it may differ.  Mine is this little "i" button.
+    
+    </p><p>So you're looking at sum of salaries by institution.
+
+    </p><p>You can also sort that. Click anywhere in the salaries column and go to Data > Sort.
+
+    </p><p>And scroll to the bottom for a Grand Total
 
     </p></td>
 </tr>
+
 
 
 <tr>
-    <td><a href="https://greencracker.github.io/excel_presentation/pix/pivotcountnames.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/pivotcountnames.JPG"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/sumofsalary.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/sumofsalary.JPG"></a></td>
     <td>
     
-    <p>Well alright, Georgia Tech has a higher payroll than UGA.  Does it have more employees?
+    <p>You can look at other things like say, average salary.   
     
-    </p><p>Click back into the PivotTable to get all the choices to come back up.
+    </p><p>On my version, I'm going to use this little "i" button to change "sum" to "average."
     
-    </p><p>Then click and drag the word "NAME" into "VALUES."
+    </p><p>Hm, average salary is a lot lower at UGA. Do they have more student employees maybe pulling down the average? 
 
-    </p><p>Then that "name" you've just dragged down there?  Click on the little "i" and make sure "COUNT" is selected.
-    
-    </p><p>You're telling it to "COUNT" all the unique "NAMEs" of employees. In English, you're saying "please count the number of employee names you see under each organization"
-
-    </p><p>That's pretty much a proxy for number of employees.
-
-    </p><p>Though yea, there could be more than one "Maggie Lee" somewhere.  That's why I say "pretty much."
-
-    </p><p>Anything interesting you see here? GSU and prisons have about the same payroll and number of employees. Huh. 
+    </p><p>And sort by average salary if you want to as well.
 
     </p></td>
 </tr>
+
+
 
 
 <tr>
