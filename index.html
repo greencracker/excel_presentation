@@ -354,7 +354,7 @@ hr { border:1px solid #ddd; }
 
     </p><p>You can also sort that. Click anywhere in the salaries column and go to Data > Sort.
 
-    </p><p>And scroll to the bottom for a Grand Total
+    </p><p>And scroll to the bottom for a Grand Total.
 
     </p></td>
 </tr>
@@ -362,10 +362,10 @@ hr { border:1px solid #ddd; }
 
 
 <tr>
-    <td><a href="https://greencracker.github.io/excel_presentation/pix/sumofsalary.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/sumofsalary.JPG"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/averagesalary.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/averagesalary.JPG"></a></td>
     <td>
     
-    <p>You can look at other things like say, average salary.   
+    <p>You can look at other things like say, average salary by organization.   
     
     </p><p>On my version, I'm going to use this little "i" button to change "sum" to "average."
     
@@ -406,8 +406,6 @@ hr { border:1px solid #ddd; }
 
   </p><p>Definitely freeze the top row to mark it as the header. Then scroll and sort and filter some if you like. Widen some of the columns if you like.
 
-  </p><p>Hint, hint, note that there's a column MaxOfnum_victims.
-
   </p>
 </td></tr>
 
@@ -437,7 +435,9 @@ hr { border:1px solid #ddd; }
     
     </p><p>I hope so because there were not 107 homicides in 2016. There were <a href="http://www.ajc.com/news/local/atlanta-homicides-from-2016-remain-unsolved-these-are-the-victims/UelLUXycTlEOJTJ7mqKf6N/" target="_blank">111</a>. 
     
-    </p><p>This data set doesn't include the number of vicitms for homicides (check that MaxOfnum_victims column.) I think the discrepancy is probably double homicides. But if I were reporting, I'd go to the source.
+    </p><p>My hunch is that this data doesn't account for double homicides. I think it just counts each incident as one, even if there were two victims. I'm not sure, you'd have to call APD to talk about that.
+
+    </p><p>It doesn't mean the data set is wrong per se. It means it might not be counting excatly what you think it's counting. Hence why you have to call to double-check.
 
     </p></td>
 </tr>
@@ -446,9 +446,9 @@ hr { border:1px solid #ddd; }
     <td><a href="https://greencracker.github.io/excel_presentation/pix/countoflocation.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/countoflocation.JPG"></a></td>
     <td>
     
-    <p>But even though you have to double-check the exact numbers, there are some broad trends in there that could mean a story for you. 
+    <p>But even though you have to double-check the exact numbers, there are some broad trends in there that could mean a story for you. In the end, you might not even report any of these numbers. They might just give you an idea.
     
-    </p><p>Go back to that PivotTable and try to find the most crime-infested address.
+    </p><p>Go back to that PivotTable and try to find the address associated with the most crimes.
     
     </p><p>You'd want row labels to be "LOCATION" and the values to be COUNT of location.
 
@@ -457,41 +457,61 @@ hr { border:1px solid #ddd; }
 
 
 <tr>
-    <td><a href="https://greencracker.github.io/excel_presentation/pix/filterbylabel.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/filterbylabel.JPG"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/crimesbylocation.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/crimesbylocation.JPG"></a></td>
     <td>
     
     <p>Clearly, I'm no crime reporter ...
     
-    </p><p>But I wasn't thinking of Wal-Mart and Lenox and Target being such hotbeds of crime.
+    </p><p>But I wasn't thinking of Wal-Mart and Lenox and Target being such hotbeds of crime. Now I know.
+
+    </p><p>Let's check out the types of crime.  Click UC2 Literal and drag it down to "Row Labels."
     
-    </p><p>And some of these addresses could accurately be combined further. 
+    </p><p>A lot of this larceny non-vehicle is probably stealing from stores.
 
-    </p><p>Try sorting by row labels, ie, by addresses. Scroll down and you'll notice a lot of addresses that are counted separately but are actually the same. For example, humans know "1275 CAROLINE ST" = "1275 CAROLINE ST." but a computer doesn't know that.
+    </p><p>And it doesn't take a genius to figure that folk would go to stores to steal things.
 
-    </p><p>So to get a truer idea of how many crimes were actually reported at/around the Caroline Street shopping center, let's do a "FILTER" of ROW LABELS that contain the word "1275 CAROLINE."
+    </p><p>But even so, some reporters have looked at different kinds of stores.  What they've found — maybe tipped off by data, but definitely confirmed by law enforcement, is that in some places, Wal-Mart requires a disporportionate amount of attention compared to other stores.
 
-    </p><p>Or do a "FILTER" of ROW LABELS that contain just the word "CAROLINE."  That will pick up the whole shopping center, including like, the Kroger at 1225.
+    </p><p>Let's check different stores here.
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/filtercontainscaroline.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/filtercontainscaroline.JPG"></a></td>
+    <td>
+    
+    </p><p>First, click and drag UC2 Literal out of "Row Labels." We don't need it just this second.  We know that these crimes are heavily weighted toward larceny non-vehicle. 
+
+    </p><p>Next, let's FILTER so we're just looking at 1275 Caroline Street, a Target.
+
+    </p><p>See that button that's like a funnel?  Click that, then go to filter > contains and in the box, type "1275 Caroline" and hit return.
+
+    </p><p>A human knows "1275 CAROLINE ST NE @ TARGET - CAROLINE" is the same as "1275 CAROLINE ST NE" and so on. But a computer doesn't. So you have to ask it for all the addresses that contain the basic part, "1275 Caroline."
+
+    </p><p>There are 138 crimes associated with that address.
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>Try the same for other addresses, 1801 Howell Mill, 835 Martin Luther King, 3393 Peachtree: two Wal-Marts and Lenox.
+    <p>You'll get 210, 203 and 405, I hope.
+
 
     </p></td>
 </tr>
 
 <tr>
-    <td><a href="https://greencracker.github.io/excel_presentation/pix/detailsbyaddress.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/detailsbyaddress.JPG"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/carolindetail.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/carolinedetail.JPG"></a></td>
     <td>
     
-    <p>And you can see what kinds of crime happen at these shops.
-    
-    </p><p>Click and drag our friend "UC2 Literal" down to "Row Labels."
-
-
-    </p></td>
-</tr>
-
-<tr>
-    <td><a href="https://greencracker.github.io/excel_presentation/pix/crimedetail.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/crimedetail.JPG"></a></td>
-    <td>
-    
-    <p>And if you want to get super-fancy and count only LARCENY-NON VEHICLE or whatever, use that little filter button, make sure it's going to filter by field "UC2 Literal," then click or unclick whichever crimes you want to see.  There's a Grand Total at the bottom.
+    <p>And of course if you want to see the crime details by address, just drag UC2 Literal back down to "Row Labels."
 
 
     </p></td>
@@ -504,13 +524,15 @@ hr { border:1px solid #ddd; }
     <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
     <td>
     
-    <p>So am I going to do a clickbaity story about how DANGER LOOMS at shopping centers?
+    <p>So yea, now with this, the clickbait fake news shops would write about how DANGER LOOMS at shopping centers because they have "the most" crime, according to "data."  Well, lies, damned lies and statistics.
     
-    </p><p>I mean OK, but there's possibly a better story. Is it possible one of these retailers is leaning on the cops more than others? Hiring less private security than the others? 
-    
-    </p><p>Bloomberg had some <a href="https://www.bloomberg.com/features/2016-walmart-crime/" target="_blank">interesting reporting</a> on Wal-Mart and security.
+    </p><p>A cooler result, IMHO, is reporters looking into data, seeing stuff that seemed a little weird, and asking police about it. 
 
-    </p><p>So did <a href="http://www.13wmaz.com/news/request-reveals-thousands-of-911-calls-to-walmart/153000548" target="_blank">Macon's</a> WMAZ. They used addresses they found in the 911 call log.
+    </p><p>Bloomberg found several Wal-Marts with not just tons of shoplifting, but a <a href="https://www.bloomberg.com/features/2016-walmart-crime/" target="_blank">troubling amount</a> of violent crime too and plenty of police and local officials who complain about the world's biggest retailer skimping on security. They also get nuanced: is a 24-hour Wal-Mart strictly comparable to a Target that closes at night? 
+
+    </p><p>Macon's WMAZ looked at Bibb County's 911 call log.<a href="http://www.13wmaz.com/news/request-reveals-thousands-of-911-calls-to-walmart/153000548" target="_blank">They found</a> that three Wal-Marts generated more than five times as many calls to deputies than four other sites — two Krogers, a mall and a Target — combined. TThe sheriff said that certain places are sometimes a draw for criminals.
+
+    </p><p>And note, both of these stories quote broadly round numbers, "about 5,000 calls,"" etc. Becasue data sets are just a 40,000-foot view. You still have to get to the ground to see the real details. 
 
     </p></td>
 </tr>
