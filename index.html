@@ -501,8 +501,9 @@ hr { border:1px solid #ddd; }
     <td>
     
     <p>Try the same for other addresses, 1801 Howell Mill, 835 Martin Luther King, 3393 Peachtree: two Wal-Marts and Lenox.
-    <p>You'll get 210, 203 and 405, I hope.
-
+    </p><p>You'll get 210, 203 and 405, I hope.
+    </p><p>
+    </p><p>To see the whole shopping center, you have to get creative. Try filtering by just "Caroline." That'll pick up the Kroger in that shopping center and other addresses. You'll have to check maps to see which are and are not in that shopping center.
 
     </p></td>
 </tr>
@@ -530,7 +531,7 @@ hr { border:1px solid #ddd; }
 
     </p><p>Bloomberg found several Wal-Marts with not just tons of shoplifting, but a <a href="https://www.bloomberg.com/features/2016-walmart-crime/" target="_blank">troubling amount</a> of violent crime too and plenty of police and local officials who complain about the world's biggest retailer skimping on security. They also get nuanced: is a 24-hour Wal-Mart strictly comparable to a Target that closes at night? 
 
-    </p><p>Macon's WMAZ looked at Bibb County's 911 call log.<a href="http://www.13wmaz.com/news/request-reveals-thousands-of-911-calls-to-walmart/153000548" target="_blank">They found</a> that three Wal-Marts generated more than five times as many calls to deputies than four other sites — two Krogers, a mall and a Target — combined. TThe sheriff said that certain places are sometimes a draw for criminals.
+    </p><p>Macon's WMAZ looked at Bibb County's 911 call log.<a href="http://www.13wmaz.com/news/request-reveals-thousands-of-911-calls-to-walmart/153000548" target="_blank">They found</a> that three Wal-Marts generated more than five times as many calls to deputies than four other sites — two Krogers, a mall and a Target — combined. The comments from the sheriff don't address any differences among stores, but he said that certain places are sometimes a draw for criminals.
 
     </p><p>And note, both of these stories quote broadly round numbers, "about 5,000 calls,"" etc. Becasue data sets are just a 40,000-foot view. You still have to get to the ground to see the real details. 
 
@@ -546,12 +547,156 @@ hr { border:1px solid #ddd; }
     <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
     <td>
     
-    <p>Coming soon! Math section!
+    <p>Let's try calculating some data now.
+
+    </p><p>Start with this county-by-county presidental vote tally from last year [TO BE LINKED]
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>We're going to see what percent of the vote each candidate took in each county.
+
+    </p><p>Take Appling County. Trump got 5,494 votes. What percent of the total did he get?
+
+    </p><p>Trump votes divided by total votes.
+
+    </p><p>First thing we need are total votes in each county. 
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/celle1.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/celle1.JPG"></a></td>
+    <td>
+    
+    <p>Make a new column for the total. Click in <i>cell</i> E1 and type "total votes in county."
+
+    </p><p>Take Appling County. Trump got 5,494 votes. What percent of the total did he get?
+
+    </p><p>First you need the total number of votes in the county.
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/add3numbers.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/add3numbers.JPG"></a></td>
+    <td>
+    
+    <p>Click in cell E2, where you want to see the Appling County total. 
+
+    </p><p>Type in this cryptic formula:
+
+    </p><p>=B2+C2+D2
+
+    </p><p>And hit "enter." VOILA!
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/handle.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/handle.JPG"></a></td>
+    <td>
+    
+    <p>Now for the other 158 counties? 
+
+    </p><p>Click in cell E2. The cell will get highlighted and a little square or "handle" will appear in the bottom right corner. 
+
+    </p><p>Click that handle and drag downward.
+
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/itknows.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/itknows.JPG"></a></td>
+    <td>
+    
+    <p>Now click in one of those cells you just filled in, say E7. 
+
+    </p><p>E7 says 6,950.  But check out the "formula bar."
+
+    </p><p>It tells you the math it's doing to come up with that number:  =B7+C7+D7
+
+    </p><p>It understands the pattern you set when you typed the formula and dragged it down: "in every row, add the numbers from columns B, C and D."
 
 
     </p></td>
 </tr>
 
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/percentformula.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/percentformula.JPG"></a></td>
+    <td>
+    
+    <p>Now as for that Trump percentage...
+
+    </p><p>Call cell F1 "Trump percent."
+
+    </p><p>Then in cell F2, here's your cryptic formula to type:
+
+    </p><p>=(B2/E2)*100
+
+    </p><p>You're saying: "Take Trump's total, divide it by the total number of votes, then multiply the result by 100."
+
+    </p><p>* asterisk is the spreadsheet symbol for multiply.
+
+    </p><p>Drag that formula down too.
+
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/percentformula.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/percentformula.JPG"></a></td>
+    <td>
+    
+    <p>You can make columns for Clinton and Johnson percents. 
+
+    </p><p>You can sort by those calculated columns. Where did Johnson get the highest percent of votes?
+
+    </p></td>
+</tr>
+
+
+
+<tr>
+     <td><a href="https://greencracker.github.io/excel_presentation/pix/sumofcolumn.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/sumofcolumn.JPG"></a></td>
+    <td>
+    
+    <p>What is the grand total of votes that each candidate got? Let's add a new row at the bottom to say.
+
+    </p><p>Go to cell A161 and call the new row "Grand Total."
+
+    </p><p>In cell B161, put this formula:
+
+    </p><p>=SUM(B2:B160)
+
+    </p><p>You're telling it: "Sum up everything between B2 and B160."
+
+    </p><p>Excel gets the idea that you mean the column.
+
+    </p><p>You know what? Then you can click B161, click its handle and drag that formula sideways to get sums for Clinton and Johnson and total votes in county too!
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td>
+    
+    <p>ye 
+
+    </p><p>You can sort by those calculated columns. Where did Johnson get the highest percent of votes?
+
+    </p></td>
+</tr>
 
 
 <tr>
