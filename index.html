@@ -77,9 +77,9 @@ hr { border:1px solid #ddd; }
 
         </p><p>Data is like a tipster. We'll see how you can get story ideas. Who's the highest-paid state employee? How many crimes do cops work at Lenox versus Wal-Mart versus Target?
               
-        </p><p>But you know tipsters. Even a very useful one isn't always perfect.  You still need to interview humans who know what's going on. For example, there weren't 107 homicides in Atlanta last year, despite what an otherwise useful data set tells us.
+        </p><p>Now for sure, after you interview the data, you still need to interview humans who know what's going on. For example, an otherwise very useful APD data set implies at first glance that there were 107 homicides in Atlanta last year. But there weren't. So we're also going to talk about red flags in data.
 
-        </p><p>Here are some stories where I guarantee you they used a spreadsheet.  The data isn't the whole story, but it was a tipster.
+        </p><p>Here are some stories where I guarantee you they used a spreadsheet.
 
         <ol>
             <li><a href="https://www.wsj.com/articles/charity-officials-are-increasingly-receiving-million-dollar-paydays-1488754532" target="_blank">Charity Officials Are Increasingly Receiving Million-Dollar Paydays</a></li>
@@ -92,7 +92,7 @@ hr { border:1px solid #ddd; }
     </td>
 </tr>
 <tr>
-    <td><a href="https://greencracker.github.io/excel_presentation/pix/beavis.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/beavis.JPG"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/visicalcwide.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/visicalcwide.JPG"></a></td>
     <td>
         <p>More and more places are publishing spreadshets! Look for little links that say stuff like "download Excel" or "download .csv" or "download data."
 
@@ -101,14 +101,12 @@ hr { border:1px solid #ddd; }
         <ol>
             <li><a href="http://opendata.atlantapd.org" target="_blank">The Atlanta Police Department</a></li>
             <li><a href="http://qpublic9.qpublic.net/ga_sales_dw.php?county=ga_fulton" target="_blank">Fulton County Board of Assessors (Property sale prices)</a></li>
-            <li><a href="http://media.ethics.ga.gov/search/Lobbyist/Lobbyist_ByExpenditures.aspx" target="_blank">The Georgia lobbyist expenditure log</a></li>
+            <li><a href="http://media.ethics.ga.gov/search/Lobbyist/Lobbyist_ByExpenditures.aspx" target="_blank">The Georgia lobbyist expendire log</a></li>
             <li><a href="http://media.ethics.ga.gov/search/Lobbyist/Lobbyist_Menu.aspx" target="_blank">Or heck, the lobbyist registry</a></li>
             <li><a href="http://media.ethics.ga.gov/search/Campaign/Campaign_ByContributions.aspx" target="_blank">Or heck, all campaign donations. Including the circular ones.</a></li>
             <li><a href="http://www.gadoe.org/Pages/Home.aspx" target="_blank">A zillion things from the state Department of Education, look under "data".</a></li>
             <li><a href="http://www.open.georgia.gov/download.html" target="_blank">Or the Georgia state salaries. All of them.</a></li>
-
-
-            
+            <li><a href="http://sos.ga.gov/index.php/Elections/current_and_past_elections_results" target="_blank">Georgia election results</a></li>            
         </ol>
 
     </td>
@@ -139,7 +137,7 @@ hr { border:1px solid #ddd; }
 
     <p>A spreadsheet is just a table or a log. A table with calculating and sorting powers.
 
-    </p><p>We're going to start with the state employee salary database for 2016*. <a href="https://greencracker.github.io/excel_presentation/pix/State2016Mod.csv.zip" target="_blank">Which is right here</a>.
+    </p><p>We're going to start with this slightly modified* state employee salary data set for 2016. <a href="https://greencracker.github.io/excel_presentation/pix/State2016Mod.csv.zip" target="_blank">Which is right here</a>.
 
     </p></td>
 </tr>
@@ -252,7 +250,7 @@ hr { border:1px solid #ddd; }
     
     <p>Clear out all the filters though, and here's why you should spend some time interrogating the data: Sort by salary lowest-to-highest.
     
-    </p><p>Negative salaries?  Times have been bad, but my guess is ...???? 
+    </p><p>Negative salaries?
 
     </p><p>So those negative salaries and some $0 salaries are a bit of a red flag.  Some are board members who don't get salaries, OK, so that's explicable. And some names, for some reason, are entered twice, once for salary and once for travel. 
     
@@ -267,7 +265,7 @@ hr { border:1px solid #ddd; }
     
     </p><p>Well, let's go to the end to see how many records there are altogether.
 
-    </p><p>Pro tip: it will take you a long time to scroll. Use a keyboard shortcut to scroll.  It will vary by computer and program and version. Mine is crtl + fn + right arrow. Yours may be crtl + down arrow. You may have to Google your shortcut.
+    </p><p>Pro tip: it will take you a long time to scroll. Use a keyboard shortcut to scroll. It will vary by computer and program and version. Mine is crtl + fn + right arrow. Yours may be crtl + down arrow. You may have to Google your shortcut.
 
     </p><p>Anyway we have 207,572 records. Of which about 2,300 have negative or $0 salaries. And of those, some are understandable, like board members earning $0. And others might be understandable if we asked about them. 
     
@@ -389,12 +387,10 @@ hr { border:1px solid #ddd; }
     
     </p><p>Let's try another data set, one from the Atlanta Police Department.
 
-    </p><p>It's a log of a handful of key crimes for CY 2016. <a href="https://greencracker.github.io/excel_presentation/pix/COBRADATA2016.zip" target="download">Which is right here</a>
+    </p><p>It's a log of of reports of a handful key crimes for CY 2016. <a href="https://greencracker.github.io/excel_presentation/pix/COBRADATA2016.zip" target="download">Which is right here</a>
     
     </p></td>
 </tr>
-
-
 
 
 
@@ -428,7 +424,7 @@ hr { border:1px solid #ddd; }
 </tr>
 
 <tr>
-    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/bars.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/bars.JPG"></a></td>
     <td>
     
     <p>But you'd call APD and double-check before reporting this, right? 
@@ -549,7 +545,7 @@ hr { border:1px solid #ddd; }
     
     <p>Let's try calculating some data now.
 
-    </p><p>Start with this county-by-county presidental vote tally from last year [TO BE LINKED]
+    </p><p>Start with this county-by-county presidental vote tally from last year, <a href="https://greencracker.github.io/excel_presentation/pix/elex2016.zip" target="_blank">which is right here</a>
 
     </p></td>
 </tr>
@@ -653,7 +649,7 @@ hr { border:1px solid #ddd; }
 </tr>
 
 <tr>
-    <td><a href="https://greencracker.github.io/excel_presentation/pix/percentformula.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/percentformula.JPG"></a></td>
+    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
     <td>
     
     <p>You can make columns for Clinton and Johnson percents. 
@@ -691,12 +687,67 @@ hr { border:1px solid #ddd; }
     <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
     <td>
     
-    <p>ye 
+    <p>Let's go through one more way to get story ideas from numbers: let's make a graph.
 
-    </p><p>You can sort by those calculated columns. Where did Johnson get the highest percent of votes?
+    </p><p>This graph isn't going to be pretty enough for publication. It's just an additional way to search for "aha" things in data.
+
+    </p><p>We're going to graph Clinton's and Trump's vote percentages by county.
 
     </p></td>
 </tr>
+
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/clusteredcolumn.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/clusteredcolumn.JPG"></a></td>
+    <td>
+    
+    <p>Click anywhere in the data and in Excel, go to Insert > Chart.
+
+    </p><p>Don't panic if yours looks different.  It probably will.  That's OK. Whatever you see, the first thing you need to do is pick a type of chart.  Look for "clustered column."
+
+    </p><p>We're going to graph Clinton's and Trump's vote percentages by county.
+
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/adjusthighlights.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/adjusthighlights.JPG"></a></td>
+    <td>
+    
+    <p>Now, your program is trying to guess what data you want graphed. The default is wrong here.  Excel is guessing you want to graph "everything."  But no, we only want three columns: County, Trump percent and Clinton percent.
+
+    </p><p>Click on the little handles and adjust them so that only those three columns are highlighted.
+
+    </p><p>Scroll to the bottom and also exclude the "Grand Total" row.  We didn't calculate statewide percents, it won't be part of this graph.
+
+    </p></td>
+</tr>
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/resize.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/resize.JPG"></a></td>
+    <td>
+    
+    <p>The default graph is kind of a mess huh, doesn't show us much. 
+
+    </p><p>First, the data is not in a useful order.  It's still sorted by Johnson's percent. 
+
+    </p><p>Let's sort by Clinton or Trump. Just click in the spreadsheet and sort like we've been doing.  The picture will resort as the data does. 
+
+    </p><p>Then strech out the graph so you can see it a little better.  Hover over the corner of the graph and when you get a two-sided arrow, click and drag that arrow.
+
+    </p></td>
+</tr>
+
+
+<tr>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/finalgraph.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/finalgraph.JPG"></a></td>
+    <td>
+    
+    <p>And voila. You have a graph that's not pretty enough for publication, but it does show you at a glance where the margin between the candidates was the biggest and the smallest.
+
+    </p></td>
+</tr>
+
 
 
 <tr>
@@ -704,12 +755,14 @@ hr { border:1px solid #ddd; }
 </tr>
 
 <tr>
-    <td><a href="http://placehold.it/350x150"><img src="http://placehold.it/350x150"></a></td>
+    <td><a href="https://greencracker.github.io/excel_presentation/pix/beavis.JPG"><img src="https://greencracker.github.io/excel_presentation/pix/beavis.JPG"></a></td>
     <td>
     
     <p>There are plenty of errors and troubles and the internet has the answer to them all.
     
     </p><p>"Numbers stored as text" 
+
+    </p><p>This text is really long and I can't see it all.
 
     </p><p>Your spreadsheet has too many rows to open
     
@@ -732,7 +785,7 @@ hr { border:1px solid #ddd; }
 
 <p>Sincere apologies to <a href="http://idlewords.com" target="_blank">idewords</a>, author of <a href="http://idlewords.com/talks/website_obesity.htm" target="_blank">The Website Obesity Crisis</a>, for my lifting this lovey lightweight layout.
 
-</p><p>*Our sample set has had K-12 school employees taken out, just so it's short enough to fit in Google Sheets.
+</p><p>*For this exercise I took the state data set and 1) cut out PreK-12 school system employees so that the spreadsheet is short enough to be opened in Google Sheets. The original data set is something like ~500k lines. 2) I also corrected some formatting that caused some lotto employee salaries to not display on the same row as employee name.
 
 
 </p></div>
