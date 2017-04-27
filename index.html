@@ -422,6 +422,8 @@ hr { border:1px solid #ddd; }
     
     </p><p>You'll want to take "UC2 Literal" and drag it down into "row labels," then take and drag it again down into "values," and make sure it's set to "count" of UC2 Literal.
 
+    </p><p>Google Sheets note: this function is called "COUNTA," not "COUNT."
+
     </p><p>In English, you're asking it, "How many times to you see the phrase 'AGG ASSAULT' and 'AUTO THEFT' and so on?"
 
     </p><p>Sort then by count. You'll see homicide are the fewest, larceny from vehicle is the most.
@@ -453,6 +455,14 @@ hr { border:1px solid #ddd; }
     </p><p>Go back to that PivotTable and try to find the address associated with the most crimes.
     
     </p><p>You'd want row labels to be "LOCATION" and the values to be COUNT of location.
+
+    </p><p>Or in Google Sheets, you'd want row labels to be "LOCATION" and the values to be COUNTA of location.
+
+    </p><p>In Excel, let's sort by that "COUNT" of location by going to data -> sort or clicking the button, etc.
+
+    </p><p>In Google Sheets, this operation is a little different. Sort by setting the menu at the right like <a href ="https://greencracker.github.io/excel_presentation/pix/sortpivotsheets.JPG" target="_blank">in this picture.</a>
+
+
 
     </p></td>
 </tr>
@@ -490,9 +500,9 @@ hr { border:1px solid #ddd; }
 
     </p><p>See that button that's like a funnel?  Click that, then go to Filter > Contains and in the box, type "1275 Caroline" and hit return.
 
-    </p><p>A human knows "1275 CAROLINE ST NE @ TARGET - CAROLINE" is the same as "1275 CAROLINE ST NE" and so on. But a computer doesn't. So you have to ask it for all the addresses that contain the basic part, "1275 Caroline."
+    </p><p>A human knows "1275 CAROLINE ST NE @ TARGET - CAROLINE" is the same as "1275 CAROLINE ST NE" and so on. But a computer doesn't. So you have to ask it for all the addresses that contain the basic part, "1275 Caroline."  Including the really maddening one that's "1275  Caroline" -- two spaces in between!
 
-    </p><p>There are 138 crimes associated with that address.
+    </p><p>There are 139 crimes associated with that address.
 
     </p></td>
 </tr>
@@ -527,9 +537,9 @@ hr { border:1px solid #ddd; }
     <td><a href="https://greencracker.github.io/excel_presentation/pix/fakenews.JPG" target="_blank"><img src="https://greencracker.github.io/excel_presentation/pix/fakenews.JPG"></a></td>
     <td>
     
-    <p>So yea, now with this, the clickbait fake news shops would write about how DANGER LOOMS at shopping centers because they have "the most" crime, according to "data."  Well, lies, damned lies and statistics.
+    <p>So yea, now with this, shopping centers have the "most" crime according to "data." Which, OK, one could make a screaming headline about DANGER LOOMS at shopping centers.
     
-    </p><p>A cooler result, IMHO, is reporters looking into data, seeing stuff that seemed a little weird, and asking police about it.
+    </p><p>But a cooler result, IMHO, is reporters looking into data just like this, seeing stuff that seemed a little weird, and asking police about it, digging in.
 
     </p><p>Bloomberg found several Wal-Marts with not just tons of shoplifting, but a <a href="https://www.bloomberg.com/features/2016-walmart-crime/" target="_blank">troubling amount</a> of violent crime too and plenty of police and local officials who complain about the world's biggest retailer skimping on security. But they also get nuanced: is a 24-hour Wal-Mart strictly comparable to a Target that closes at night? 
 
@@ -726,6 +736,10 @@ hr { border:1px solid #ddd; }
 
     </p><p>Scroll to the bottom and also exclude the "Grand Total" row. We didn't calculate statewide percents, it won't be part of this graph.
 
+    </p><p>Google Sheets: GS will also incorrectly guess that you want to graph the whole data set. You'll have to do the same thing: tell it which columns you actually want to graph. On the chart types tab, click the grid <a href="https://greencracker.github.io/excel_presentation/pix/sheetschooseranges.JPG" target="_blank">pictured here</a>. It will ask you which ranges you want to add. You can add columns A, F and G there.
+
+
+
     </p></td>
 </tr>
 
@@ -750,6 +764,8 @@ hr { border:1px solid #ddd; }
     <td>
     
     <p>And voila. You have a graph that's not pretty enough for publication, but it does show you at a glance where the margin between the candidates was the biggest and the smallest.
+
+    </p><p>Google Sheets: to be able to click on a bar and see the Trump percent and the Clinton percent, click the eyeball button to the right of the chart.  That takes you out of edit mode and into viewer mode.
 
     </p></td>
 </tr>
